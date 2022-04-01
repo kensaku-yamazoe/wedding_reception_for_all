@@ -1,0 +1,76 @@
+/* スクロール用アニメーション c-fadeは必須 (例 "c-fade c-right") */
+.c-fade { opacity: 0; }
+.c-fade.fade-v { animation: fadeIn 1s ease forwards; }
+.c-right { opacity: 0; }
+.c-right.fade-v { animation: rightIn 1s ease forwards; }
+.c-left { opacity: 0; }
+.c-left.fade-v { animation: leftIn 1s ease forwards; }
+.c-bottom { opacity: 0; }
+.c-bottom.fade-v { animation: bottomIn 1s ease forwards; }
+
+/* 順番表示 */
+.c-right-order { opacity: 0; }
+.c-right-order.fade-v:nth-child(1) { animation: 1s rightIn 0.1s ease forwards; }
+.c-right-order.fade-v:nth-child(2) { animation: 1s rightIn 0.2s ease forwards; }
+.c-right-order.fade-v:nth-child(3) { animation: 1s rightIn 0.3s ease forwards; }
+.c-right-order.fade-v:nth-child(4) { animation: 1s rightIn 0.4s ease forwards; }
+.c-right-order.fade-v:nth-child(5) { animation: 1s rightIn 0.5s ease forwards; }
+.c-right-order.fade-v:nth-child(6) { animation: 1s rightIn 0.6s ease forwards; }
+.c-right-order.fade-v:nth-child(7) { animation: 1s rightIn 0.7s ease forwards; }
+.c-right-order.fade-v { animation: rightIn 1s ease forwards; }
+
+/* 順番表示ボタン */
+/* .c-button { opacity: 0; }
+.c-button.fade-v:nth-child(1) { animation: 1s bottomIn 0.3s ease forwards; }
+.c-button.fade-v:nth-child(2) { animation: 1s bottomIn 0.6s ease forwards; } */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes rightIn {
+  0% { transform: translateX( 50px );}
+  100% { opacity: 1; transform: translateX( 0 );}
+}
+@keyframes leftIn {
+  0% { transform: translateX( -50px );}
+  100% { opacity: 1; transform: translateX( 0 );}
+}
+@keyframes bottomIn {
+  0% { transform: translateY( 50px );}
+  100% { opacity: 1; transform: translateY( 0 );}
+}
+
+body{
+    font-family: 'Noto Serif JP', serif;
+}
+/* google map */
+.gmap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* form */
+.text-form{
+    padding: 5px 10px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.gradient03{
+    background: linear-gradient(to bottom, rgba(0, 109, 18, 0.555) 0%, rgba(160, 52, 9, 0.384) 50%, rgba(224, 183, 0, 0.747) 100%),url(img.jpg);
+}
+
+.t-shadow{
+    text-shadow: 1px 1px 6px #000000c9; 
+}
