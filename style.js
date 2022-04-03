@@ -107,6 +107,24 @@ tailwind.config = {
                 '-1/2': '-50%',
                 '-full': '-100%',
               },
+              variants: {
+                textColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+                width: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+                height: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+                padding: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+                backgroundColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+                borderStyle: ['responsive', 'hover', 'active', 'group-hover'],
+                borderWidth: ['responsive', 'hover', 'active', 'group-hover'],
+                borderColor: ['responsive', 'hover', 'active', 'group-hover'],
+                opacity: ['responsive', 'hover', 'group-hover'],
+                translate: ['responsive', 'hover', 'group-hover'],
+                transform: ['responsive', 'hover', 'group-hover'],
+                rotate: ['responsive', 'hover', 'group-hover'],
+                transitionDuration:['responsive', 'hover', 'focus', 'active', 'group-hover'],
+                textDecoration: ['responsive', 'hover', 'focus', 'group-hover'],
+                letterSpacing: ['hover', 'focus', 'active'],
+                boxShadow: ['hover', 'active'],
+              },
         }
     }
 }

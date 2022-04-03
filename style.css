@@ -68,7 +68,7 @@ body{
 }
 
 .gradient03{
-    background: linear-gradient(to bottom, rgba(0, 109, 18, 0.555) 0%, rgba(160, 52, 9, 0.384) 50%, rgba(224, 183, 0, 0.747) 100%),url(img.jpg);
+    background: linear-gradient(to bottom, rgba(0, 109, 18, 0.555) 0%, rgba(160, 52, 9, 0.384) 50%, rgba(219, 199, 111, 0.747) 100%),url(img.jpg);
 }
 
 .t-shadow{
